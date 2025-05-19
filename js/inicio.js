@@ -155,7 +155,7 @@ function detallesRegistro(idPlanta, registro) {
     const datosRegistro = document.getElementById("datosRegistro");
     datosRegistro.innerHTML = `
         <h3>Detalles del Registro</h3>
-        <p>Nombre: ${registro.nombre}</p>
+        <p>Observacion: ${registro.nombre}</p>
         <p>Fecha: ${registro.fecha}</p>
         <p>Humedad: ${planta.humedad}</p>
         <p>Crecimiento: 30%</p>
