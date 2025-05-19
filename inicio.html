@@ -26,21 +26,24 @@
         </div>
 
         <!-- Sección de información -->
-        <div class="info" id="info">
-            <h2>Información de la Planta</h2>
-            <p id="nombrePlanta">Nombre: </p>
-            <p id="tipoPlanta">Tipo: </p>
-            <p id="estadoPlanta">Estado: </p>
-            <p id="temperatura">Temperatura: </p>
-            <p id="humedad">Humedad: </p>
-            <hr>
-            <h2>Registros</h2>
-            <ul id="registros">
-            </ul>
+        <!-- Sección de información -->
+    <div class="info" id="info">
+        <ul id="registros"></ul>
+        
+        <div class="detalle-registro" id="detalleRegistro" style="display: none;">
+            <div class="detalle-graficas">
+                <div class="detalle-datos" id="datosRegistro"></div>
+                <canvas id="graficaHumedad"></canvas>
+                <canvas id="graficaCrecimiento"></canvas>
+                <img id="fotoPlanta" alt="Foto de la Planta">
+            </div>
         </div>
+    </div>
+
     </div>
 
     <script src="js/inicio.js"></script>
     <script src="https://kit.fontawesome.com/be6eb0c4a9.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </body>
 </html>

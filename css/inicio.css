@@ -28,6 +28,8 @@ html, body {
     padding: 1rem;
     overflow-y: auto;
     border-right: 2px solid #ccc;
+    border-top-left-radius: 1.5rem;
+    border-bottom-left-radius: 1.5rem;
 }
 
 .sidebar h2 {
@@ -91,6 +93,8 @@ html, body {
     padding: 2rem;
     background-color: rgba(255, 255, 255, 0.9);
     overflow-y: auto;
+    border-top-right-radius: 1.5rem;
+    border-bottom-right-radius: 1.5rem;
 }
 
 .info h2 {
@@ -99,4 +103,45 @@ html, body {
 
 .info p, .info ul {
     margin: 0.5rem 0;
+}
+
+.detalle-registro {
+    /* display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto; */
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-top: 2rem;
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 1rem;
+    border-radius: 1rem;
+    border: 2px solid #ccc;
+}
+
+.detalle-datos {
+    padding: 1rem 0 0 2rem;
+}
+
+.detalle-graficas {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    align-items: start;
+    width: 49%;
+}
+
+.detalle-graficas canvas {
+    width: 100%;
+    height: 300px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 0.5rem;
+    padding: 1rem;
+}
+
+.detalle-graficas img {
+    width: 100%;
+    height: 300px;
+    object-fit: contain;
+    border-radius: 0.5rem;
 }
